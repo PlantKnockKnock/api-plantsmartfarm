@@ -1,3 +1,6 @@
+## 환경설정 :
+- https://dev.to/rosyshrestha/deploy-nestjs-typescript-app-to-heroku-27e
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
