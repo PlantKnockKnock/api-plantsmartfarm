@@ -10,9 +10,12 @@ export class AppController {
     return this.appService.getHello();
   }
 
+  // 일단 온습도 값 표시를 위한 테스트용
   @Post("/temperature")
   showTemperature(@Body() data)
   {
-    return "온도 : " + data.temperature + "℃ 습도 : " + data.humidity;
+    let temperature : string = data.temperature;
+    let humidity : string = data.humidity;
+    return "온도 : " + temperature + "°C 습도 : " + humidity + "%";
   }
 }
