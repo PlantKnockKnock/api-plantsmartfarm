@@ -16,6 +16,7 @@ export class AppController {
   {
     let temperature : string = data.temperature;
     let humidity : string = data.humidity;
+    console.log(data);
     console.log("온도 : " + temperature + "°C 습도 : " + humidity + "%");
     return "온도 : " + temperature + "°C 습도 : " + humidity + "%";
   }
