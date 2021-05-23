@@ -14,10 +14,9 @@ export class AppController {
   @Post("/temperature")
   showTemperature(@Body() data)
   {
+    // 데이터 형식을 DTO 로 정의하고 측정 값 형식을 number로 할것
     let temperature : string = data.temperature;
     let humidity : string = data.humidity;
-    console.log(data);
-    console.log("온도 : " + temperature + "°C 습도 : " + humidity + "%");
     return "온도 : " + temperature + "°C 습도 : " + humidity + "%";
   }
 }
