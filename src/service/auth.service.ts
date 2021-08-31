@@ -42,7 +42,7 @@ export class AuthService {
       username: user.user_id, 
       type:'access'
     };
-    return this.jwtService.sign(payload, { expiresIn: '60s' })
+    return this.jwtService.sign(payload, { expiresIn: '1h' })
   }
 
   issueRefreshToken(user:User) {
