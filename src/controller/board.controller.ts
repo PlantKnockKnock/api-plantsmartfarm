@@ -11,7 +11,7 @@ export class BoardController {
   async getBoardList () {
     const posts = await this.boardService.findAll();
     return {
-      sucess : true,
+      success : true,
       statusCode : 200,
       posts : posts
     };
