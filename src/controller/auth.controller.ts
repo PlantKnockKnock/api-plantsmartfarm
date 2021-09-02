@@ -14,7 +14,7 @@ export class AuthController {
     const user = await this.userService.createUser(body);
     if (user == null) {
       return {
-        sucess : 'false',
+        sucess : false,
         message : "이미 회원가입된 사용자가 있습니다.",
         statusCode: 401,
       }
@@ -24,7 +24,7 @@ export class AuthController {
     const access_token = this.authService.issueAccessToken(user)
 
     return {
-      sucess: 'true',
+      sucess: true,
       statusCode : 200,
       access_token : access_token,
     }
